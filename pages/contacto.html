@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<style>
+
+
+    ul{
+        font-family: fantasy;
+        color: red;
+        background-color: rgba(255, 251, 0, 0.726);
+        display: block;
+        font-size: 20px;
+    }
+    </style>
+<body>
+
+    
+
+    <header>
+        <h1 id="Contactos">Contactos</h1>
+
+        <!---lista no ordenadas-->
+        <ul>
+            <li>
+                <!---el asterisco redirecciona al titulo-inicio-->
+                <a href="../index.html">Home</a> <!---los doble puntitos vuelven 2 veces-->
+            </li>
+            <li>
+                <a href="./pedidos.html">Pedidos</a>
+            </li>
+            <li>
+                <a href="./nosotros.html">Nosotros</a>
+            </li>
+            <li>
+                <a href="./productos.html">Productos</a>
+            </li>
+        </ul>
+    </header>
+
+    <main> <!---segmentar cada parte-->
+
+        <fieldset>
+            <legend>Contactos</legend>
+            <form action="" method="get">
+                
+                <!--Div: representa un campo (Nombre en es)-->
+                <div>
+                    <label for="nombre">Ingrese su nombre
+                        <input type="text" id="nombre" required> 
+                    </label>
+                </div>
+
+                <div>
+                    <label for="apellido">Ingrese su apellido
+                        <input type="text" id="apellido" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="direccion">Ingrese su dirección
+                        <input type="text" id="direccion" required>
+                    </label>
+                </div>
+
+                <div>
+                    <label for="lista">Que vas a comer?</label>
+                    <select name="comida" id="lista">
+                        <option value="papas">Papas Fritas</option>
+                        <option value="pachata">Pachatas</option>
+                        <option value="Lomo">Lomo</option>
+                        <option value="pizza">Pizza</option>
+                        
+
+                    </select>
+                
+                </div>
+                <div>
+                    <label for="cantidad">Cantidad
+                        <input type="number" id="cantidad">
+                    </label>
+                </div>
+
+
+               
+                <div>
+                    <label form="detalle">
+                        <textarea name="observacion" id="detalle" cols="30" rows="10" placeholder="Ingrese Mensaje"></textarea>
+
+                    </label>
+                </div>
+                <div>
+                    <label for="local"> Formas de envío:
+                        <input type="radio" name="retiro" id="local" checked>Retiro en local
+                    </label>
+                    <label for="domicilio">
+                        <input type="radio" name="retiro" id="domicilio" checked>Retiro a domicilio
+
+                    </label>
+                </div>
+
+                <div>
+                    <label for="efectivo">Formas de pago:
+                        <input type="radio" name="pago" id="efectivo"> Efectivo 
+                    </label>
+                    <label for="debito">
+                        <input type="radio" name="pago" id="debito"> Débito 
+                    </label>
+                    <label for="credito">
+                        <input type="radio" name="pago" id="credito"> Crédito 
+                    </label>
+                    <label>
+
+                </div>
+
+                <div>
+                    
+                    <input type="submit" id="Enviar" value="Enviar">
+                    <input type="reset" id="Limpiar" value="Limpiar">
+                </div>
+
+
+                
+
+                
+
+
+
+            </form>
+
+
+        </fieldset>
+
+    </main>
+
+    <footer>
+
+       <h6>#Derechos reservados</h6>
+       <br>
+
+   </footer>
+    
+</body>
+</html>
